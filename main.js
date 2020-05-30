@@ -4,8 +4,8 @@
   let player;
   let game;
 
-  //const socket = io.connect('https://web-tic-tac-toe.herokuapp.com/'),
-  const socket = io.connect('http://localhost:3000');
+  const socket = io.connect('https://web-tic-tac-toe.herokuapp.com/'),
+  //const socket = io.connect('http://localhost:3000');
 
   class Player {
     constructor(name, type) {
