@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400);
+#particle-canvas {
+  width: 100%;
+  height: 100%;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  background: rgb(216, 59, 255);
+}
+
+h1 {
+  display: table;
+  margin: 0 auto;
+  font-family: "Roboto Slab";
+  font-weight: 200;
+  font-size: 4em;
+}
+
+h2 {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-weight: 100;
+  font-size: 3em;
+  color: #fffb00;
+}
+td {
+	border:  8px solid rgb(0, 0, 0);
+	height:  100px;
+	width:  100px;
+	text-align:  center;
+	vertical-align:  middle;
+	font-family:  Arial, Verdana, sans-serif;
+	font-size:  70px;
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	position: absolute;
+	left: 50%;
+	margin-left: -155px;
+	top: 300px;
+}
+
+
+
+.endgame {
+display: none;
+  width: 300px;
+  height:  100px;
+  top: 350px;
+  background-color: rgba(221,221,221,0.8);
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 4em;
+ color: #000000;
+}
+#plmt
+{
+
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  text-align: center;
+  align-items: center;
+	  background-color: rgb(249, 253, 8);
+  }
+  #plmt:hover {
+	  background-color: rgb(29, 29, 29);
+	  color: rgb(255, 255, 255);
+	}

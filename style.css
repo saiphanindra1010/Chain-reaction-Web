@@ -1,0 +1,87 @@
+body
+{
+	background-color: rgb(216, 59, 255);
+}
+#new
+{
+	font-weight: 1000;
+	color: rgb(27, 27, 27);
+	background-color: rgb(245, 248, 46);
+}
+#new:hover {
+	background-color: #1D1F20;
+	color: rgb(255, 255, 255);
+  }
+  #join
+{font-weight: 1000;
+	color: rgb(27, 27, 27);
+	background-color: rgb(251, 255, 0);
+}
+#join:hover {
+	background-color: rgb(27, 27, 27);
+	color: rgb(255, 255, 255);
+  }
+  #play
+  {font-weight: 1000;
+	  color: rgb(27, 27, 27);
+	  background-color: rgb(251, 255, 0);
+  }
+  #play:hover {
+	  background-color: #1D1F20;
+	  color: rgb(255, 255, 255);
+	}
+.tile{
+	width: 120px;
+	height: 120px;
+	font-size: 60px;
+	color:rgb(0, 0, 0);
+	font-family: Helvetica;
+	border: 6px solid rgb(0, 0, 0);
+}
+
+.menu1
+{
+	text-align: center;
+}
+.menu2
+{
+	text-align: center;
+	color: rgb(29, 29, 29)
+}
+.center{
+	margin: 0 auto;
+}
+#box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1000px;
+	height:200px;
+	color: white;
+	font-family: 'Raleway';
+	font-size: 2rem;
+  }
+  .gradient-border {
+	--borderWidth: 6px;
+	background: #1D1F20;
+	position: relative;
+	border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+	content: '';
+	position: absolute;
+	top: calc(-1 * var(--borderWidth));
+	left: calc(-1 * var(--borderWidth));
+	height: calc(100% + var(--borderWidth) * 2);
+	width: calc(100% + var(--borderWidth) * 2);
+	background: linear-gradient(60deg, #ff18b2, #c25929, #ecef4e, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	border-radius: calc(2 * var(--borderWidth));
+	z-index: -1;
+	background-size: 300% 300%;
+  }
+.INSTRUCTIONS
+{
+	font-family: "Lucida Console", Courier, monospace;
+	text-align: center;
+	font-size:larger;
+}
