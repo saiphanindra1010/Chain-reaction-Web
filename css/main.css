@@ -1,0 +1,54 @@
+body{
+text-shadow: 1px 1px 4px rgba(0,0,0,.6);
+}
+#section1{
+padding-top:50px;
+}
+.wrapper {
+text-align: center;
+}
+.button {
+position: absolute;
+top: 50%;
+}
+.table{
+background-image:url('../Sankes&Laders.jpg');
+height:500px;
+width:500px;
+border:0px solid #fff;
+margin:auto;
+}
+td{
+height:100px;
+width:100px;
+border:0px solid #fff;
+}
+h1{
+font-size: 50px;
+font-weight: 700;
+}
+#second_player,#first_player{
+
+height:200px;
+width:200px;
+background-color:rgb(99, 96, 247);
+}
+#first_player{
+
+background-color:rgb(236, 72, 72);
+
+}
+h3{
+color:#fff;
+}
+button{
+height:60px;
+width:160px;
+background-color:rgb(47, 48, 47);
+color:#fff;
+}
+
+#denote_pos{
+padding-left:10px;
+color:grad;
+}
