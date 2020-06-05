@@ -1,68 +1,102 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Tic Tac Toe</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="node_modules/skeleton-css/css/skeleton.css">
-	</head>
-	<body>
-		<div class="container">
-			<div class="menu">
-				<div class="menu1">
-				<h1><u>Tic  Tac  Toe</u></h1>
-				
-				<h4>New Game</h4>
-				<input type="text" name="name" id="nameNew" placeholder="Enter your name" required>
-				<button id="new">New Game</button>
-				<br><br>
-				<h4>Join a game room</h4>
-				<input type="text" name="name" id="nameJoin" placeholder="Enter your name" required>
-				<input type="text" name="room" id="room" placeholder="Enter Game ID" required>
-				<button id="join">Join</button></div>
-			<div class="menu2">
-				<h4>(OR)</h4><h5>Play with Computer💻</h5>
-				<a href='comindex.html'> <button id="play">Play</button></a></div>
-			
-				<br>
-				<div class="gradient-border" id="box">
-					
-					
-					<ol>
-						<h3 class="INSTRUCTIONS"><u>INSTRUCTIONS TO START THE GAME</u></h3>
-						<li>If you want to start a new game click NEW GAME</li>
-						<li>If you want to join the room enter gain id and click JOIN</li>
-						<li>Click PLAY button to play with Computer💻</li>
-					</ol>
-				
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	
+<body>
+    
+<h1 class="text-center"><span style="color:rgb(49, 49, 49);">Snake And Ladder</span> </h1>
+<section id="section1">
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+					<div id="first_player">
+						<h3 class="text-center">Player-1</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<h4 id="denote_pos">
+									Position
+								</h4>
+							</div>
+							<div class="col-md-6">
+								<h4 id="fp_position"></h4>
+							</div>
+						</div>
+					</div>
+					<div style="position: absolute; padding-top: 50px;">
+						<div id="second_player">
+							<h3 class="text-center">Player-2</h3>
+							<div class="row">
+							<div class="col-md-6">
+								<h4 id="denote_pos">
+									Position
+								</h4>
+							</div>
+							<div class="col-md-6">
+								<h4 id="sp_position"></h4>
+							</div>
+						</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-			<div class="gameBoard" style="display: none;">
-				<h2 id="userHello"></h2>
-				<h3 id="turn"></h3>
-				<a href='/comindex.html'> <button id="play"> <- Play With Computer💻</button></a>
-				<br>
-				<table class="center">
-					<tr>
-						<td><button class="tile" id="button_00"></button></td>
-						<td><button class="tile" id="button_01"></button></td>
-						<td><button class="tile" id="button_02"></button></td>
-					</tr>
-					<tr>
-						<td><button class="tile" id="button_10"></button></td>
-						<td><button class="tile" id="button_11"></button></td>
-						<td><button class="tile" id="button_12"></button></td>
-					</tr>
-					<tr>
-						<td><button class="tile" id="button_20"></button></td>
-						<td><button class="tile" id="button_21"></button></td>
-						<td><button class="tile" id="button_22"></button></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		<script src="node_modules/jquery/dist/jquery.min.js"></script>
-		<script src="/socket.io/socket.io.js"></script>
-		<script src="main.js"></script>
-	</body>
-</html>
+<div class="col-md-8">
+<table class="table">
+<tr>
+							<td id="21"></td>
+							<td id="22"></td>
+							<td id="23"></td>
+							<td id="24"></td>
+							<td id="25"></td>
+						</tr>
+						<tr>
+							<td id="20"></td>
+							<td id="19"></td>
+							<td id="18"></td>
+							<td id="17"></td>
+							<td id="16"></td>
+						</tr>
+						<tr>
+							<td id="11"></td>
+							<td id="12"></td>
+							<td id="13"></td>
+							<td id="14"></td>
+							<td id="15"></td>
+						</tr>
+						<tr>
+							<td id="10"></td>
+							<td id="9"></td>
+							<td id="8"></td>
+							<td id="7"></td>
+							<td id="6"></td>
+						</tr>
+						<tr>
+							<td id="1"></td>
+							<td id="2"></td>
+							<td id="3"></td>
+							<td id="4"></td>
+							<td id="5"></td>
+						</tr>
+</table>
+</div>
+<div class="col-md-2">
+<button type="button" onclick="showNumber();">Roll Dice</button>
+<h2 id="number" style="display:none;">You got <span id="num"></span></h2>
+</div>
+</div>
+</div>
+</section>
+</body>
+<!-- jQuery Version 1.8.3.min -->
+<script src="static/js/jquery-1.8.3.min.js"></script>
+<script src="js/main.js"></script>
+
+</html> 
