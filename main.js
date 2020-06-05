@@ -4,8 +4,8 @@
   let player;
   let game;
 
-  const socket = io.connect('https://web-tic-tac-toe.herokuapp.com/'),
-  //const socket = io.connect('http://localhost:3000');
+
+  const socket = io.connect('http://localhost:3000');
 
   class Player {
     constructor(name, type) {
@@ -18,9 +18,6 @@
     static get wins() {
       return [7, 56, 448, 73, 146, 292, 273, 84];
     }
-
-    // Set the bit of the move played by the player
-    // tileValue - Bitmask used to set the recently played move.
     updatePlaysArr(tileValue) {
       this.playsArr += tileValue;
     }
@@ -29,7 +26,6 @@
       return this.playsArr;
     }
 
-    // Set the currentTurn for player to turn and update UI to reflect the same.
     setCurrentTurn(turn) {
       this.currentTurn = turn;
       const message = turn ? 'Your turn' : 'Waiting for Opponent';
